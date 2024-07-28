@@ -31,9 +31,9 @@ pipeline {
   post {
     always {
       // Archive test results and videos
-      // archiveArtifacts artifacts: 'cypress/videos/**/*.*', allowEmptyArchive: true
-      // archiveArtifacts artifacts: 'cypress/screenshots/**/*.*', allowEmptyArchive: true
-      // junit 'cypress/results/*.xml' // Adjust this path if you generate JUnit reports
+      archiveArtifacts artifacts: 'cypress/videos/**/*.*', allowEmptyArchive: true
+      archiveArtifacts artifacts: 'cypress/screenshots/**/*.*', allowEmptyArchive: true
+      junit 'cypress/results/*.xml' // Adjust this path if you generate JUnit reports
     }
   }
 }
