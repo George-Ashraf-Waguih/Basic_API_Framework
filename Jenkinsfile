@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         // Checkout the code from the repository
-        git 'https://github.com/George-Ashraf-Waguih/Basic_API_Framework'
+        git branch: 'main', url: 'https://github.com/George-Ashraf-Waguih/Basic_API_Framework'
       }
     }
 
