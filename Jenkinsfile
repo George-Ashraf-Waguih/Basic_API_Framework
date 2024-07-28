@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   tools {
-    nodejs 'NodeJS 22.5' // Adjust this name to match your NodeJS installation name in Jenkins
+    nodejs 'Node' // Adjust this name to match your NodeJS installation name in Jenkins
   }
 
   stages {
